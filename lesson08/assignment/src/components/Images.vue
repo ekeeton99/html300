@@ -7,7 +7,7 @@
             :class="[isActive ? 'hasBorder' : 'noBorder']" 
             @click="toggleBorder()"
         />
-        <!-- <p :class="[isActive ? '.hasBorder' : '.noBorder']" @click="toggleBorder()">{{ alt }}</p> -->
+       <p>{{ alt }}</p>
     </div>
 </template>
 
@@ -41,11 +41,12 @@ p {
     font-style: italic;
 }
 img {
-    padding-bottom: 3rem;
-    margin: 0 3rem;
+    margin: 0 3rem 1rem 3rem;
+    max-width: 75%;
+    min-width: 75%;
 }
 .hasBorder {
-    border: 5px solid red;
+    border: 3px solid rgb(6, 48, 7);
 }
 .noBorder {
     border: none;
